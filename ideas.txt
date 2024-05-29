@@ -1,0 +1,15 @@
+What info to show
+
+First, have a handful of tickers pre-selected (my favorites) and show the lat 30 days of performance.
+
+this should be a chart with the the ticker symbol below the chart.  probably takes up the top 20% of the screen?
+Should I add some intraday values for this too?
+
+then if if you click the symbol - take you to the fundamental information of that company.
+
+can get market intelligence, and news at https://www.alphavantage.co/documentation/#intelligence
+
+I want a feed of news in the bottom left corner.  with an ability to add/edit the topics
+
+
+bottom right is crypto?  or top winners/losers?
