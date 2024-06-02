@@ -1,10 +1,10 @@
-import { QueryClientProvider } from 'react-query'
 import './App.css'
-import { DailyData } from './components/dailyData'
+import { DailyData } from './components/DailyData'
+import { Tickers } from './models/Ticker'
 
 function App() {
   return (
-    <DailyData/>
+    <DailyData tickers={new Tickers(["ENV", "IBM", "AMZN"])}/>
   )
 }
 
