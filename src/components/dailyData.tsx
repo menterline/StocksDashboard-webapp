@@ -34,6 +34,5 @@ export const DailyData = (props: Props) => {
   // );
   useQuery(["tickers", props.tickers], () => fetchData(props.tickers));
 
-  console.log(tickerData);
   return <div>{tickerData && <DailyDataChart tickerData={tickerData} />}</div>;
 };
