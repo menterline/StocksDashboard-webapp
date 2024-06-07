@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import { Tickers } from "../models/Ticker";
-import React, { useEffect } from "react";
+import React from "react";
 import { TickerData } from "../models/TickerData";
 import { testData } from "../test/resources/test_daily_data";
 import { DailyDataChart } from "./DailyDataChart";
@@ -25,14 +25,14 @@ export const DailyData = (props: Props) => {
     );
   };
 
-  useEffect(
-    () =>
-      setTickerData([
-        TickerData.fromTickerDailyTimeSeriesResponse(testData[0]),
-      ]),
-    []
-  );
-  //useQuery(["tickers", props.tickers], () => fetchData(props.tickers))
+  // useEffect(
+  //   () =>
+  //     setTickerData([
+  //       TickerData.fromTickerDailyTimeSeriesResponse(testData[0]),
+  //     ]),
+  //   []
+  // );
+  useQuery(["tickers", props.tickers], () => fetchData(props.tickers));
 
   console.log(tickerData);
   return <div>{tickerData && <DailyDataChart tickerData={tickerData} />}</div>;
