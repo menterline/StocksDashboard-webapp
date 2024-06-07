@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx,html}'],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        '40vw': '40vw',
+      },
+    },
   },
   plugins: [],
 }

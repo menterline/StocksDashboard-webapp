@@ -4,13 +4,16 @@ import HighchartsAccessibility from "highcharts/modules/accessibility";
 import { TickerData } from "../models/TickerData";
 HighchartsAccessibility(Highcharts);
 
-export const DailyDataChart = (props: { tickerData: TickerData[] }) => {
+export const DailyDataChart = (props: {
+  tickerData: TickerData[];
+  chartTitle: string;
+}) => {
   const chartOptions = {
     chart: {
       type: "line",
     },
     title: {
-      text: "Close vs. Date",
+      text: props.chartTitle,
     },
     xAxis: {
       type: "datetime",
