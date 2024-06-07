@@ -27,15 +27,15 @@ export class DailyData {
     return this.high;
   }
 
-  low(): number {
+  getLow(): number {
     return this.low;
   }
 
-  close(): number {
+  getClose(): number {
     return this.close;
   }
 
-  volume(): number {
+  getVolume(): number {
     return this.volume;
   }
 }
