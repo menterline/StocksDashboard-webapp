@@ -9,7 +9,12 @@ then if if you click the symbol - take you to the fundamental information of tha
 
 can get market intelligence, and news at https://www.alphavantage.co/documentation/#intelligence
 
-I want a feed of news in the bottom left corner.  with an ability to add/edit the topics
 
+Add some options for the charts - make it able to show any of the 5 data points (open, close, low, high, volume)
 
-bottom right is crypto?  or top winners/losers?
+finish about me.  add more detailed sections for previous jobs.  Links that add some more info in bottom right section?
+
+Add section (before about me?) that gets top gainers and losers
+Add section to pick what tickers you select.  needs to be in each chart.
+then you can click on the legend item to get more info.
+Add API for crypto data
