@@ -36,7 +36,7 @@ export const AboutMe = () => {
   const [selectedLink, setSelectedLink] = useState<Link | null>(null);
   return (
     <div className="flex flex-row align-left ">
-      <div className="flex flex-col  gap-16">
+      <div className="flex flex-col  gap-16 w-1/5">
         <div>
           <h1 className="text-3xl font-bold flex flex-col">About Me</h1>
           <p className="text-lg ">
