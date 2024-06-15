@@ -1,12 +1,16 @@
+import { ThemeProvider } from "@mui/material";
 import "./App.css";
 import { AboutMe } from "./components/AboutMe";
-import { DailyData } from "./components/DailyData";
-import { Tickers } from "./models/Ticker";
+import { theme } from "./Theme";
 
 function App() {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row">
+    <ThemeProvider theme={theme}>
+      <div className="flex flex-col">
+        <div className="flex flex-row">
+          <AboutMe />
+        </div>
+        {/* <div className="flex flex-row">
         <DailyData
           tickers={new Tickers(["ENV", "IBM", "AMZN"])}
           chartTitle="Stocks Closing Price"
@@ -15,11 +19,9 @@ function App() {
           tickers={new Tickers(["Bitcoin", "Ethereum"])}
           chartTitle="Cryptocurrency Closing Price"
         />
+      </div> */}
       </div>
-      <div className="flex flex-row">
-        <AboutMe />
-      </div>
-    </div>
+    </ThemeProvider>
   );
 }
 

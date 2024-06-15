@@ -1,7 +1,7 @@
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts";
 import HighchartsAccessibility from "highcharts/modules/accessibility";
-import { TickerData } from "../models/TickerData";
+import { TickerData } from "../Projects/StocksDashboard/models/TickerData";
 HighchartsAccessibility(Highcharts);
 
 //TODO want to make the type of data to show configurable - so this should take a function

@@ -1,9 +1,9 @@
 import { useQuery } from "react-query";
-import { Tickers } from "../models/Ticker";
+import { Tickers } from "../Projects/StocksDashboard/models/Ticker";
 import React from "react";
-import { TickerData } from "../models/TickerData";
+import { TickerData } from "../Projects/StocksDashboard/models/TickerData";
 import { DailyDataChart } from "./DailyDataChart";
-import { TickerDataResponseNode } from "../models/TickerDataResponseNode";
+import { TickerDataResponseNode } from "../Projects/StocksDashboard/models/TickerDataResponseNode";
 
 type Props = {
   tickers: Tickers;
